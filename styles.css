@@ -37,6 +37,31 @@ header .container {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.5px;
+    cursor: default;
+}
+
+.artist-name span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.artist-name span:hover {
+    animation: letterDance 0.5s ease;
+}
+
+@keyframes letterDance {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-8px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-4px) rotate(5deg);
+    }
+    75% {
+        transform: translateY(-6px) rotate(-3deg);
+    }
 }
 
 nav ul {
